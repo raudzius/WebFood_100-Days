@@ -1,60 +1,99 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    background-color: rgb(44, 41, 38);
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  header#main-header {
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(29, 26, 24);
-    padding: 0 5%;
-  }
-  
-  header a#logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(238, 164, 80);
-    text-transform: uppercase;
-  }
-  
-  header a.menu-btn {
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    display: none;
-  }
-  
-  header a.menu-btn span {
-    width: 100%;
-    height: 3px;
-    background-color: white;
-  }
-  
-  header nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header nav li {
-    margin: 0 1rem;
-  }
-  
-  header nav a {
-    color: rgb(185, 131, 31);
-    font-size: 1.25rem;
-  }
-  
-  header nav a:hover {
-    color: rgb(228, 163, 44);
-  }
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: rgb(44, 41, 38);
+}
+
+a {
+  text-decoration: none;
+}
+
+header#main-header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(29, 26, 24);
+  padding: 0 5%;
+}
+
+header a#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(238, 164, 80);
+  text-transform: uppercase;
+}
+
+header a.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+header a.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  margin: 0 1rem;
+}
+
+header nav a {
+  color: rgb(185, 131, 31);
+  font-size: 1.25rem;
+}
+
+header nav a:hover {
+  color: rgb(228, 163, 44);
+}
+aside#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29, 26, 27);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+aside#side-drawer:target {
+  display: block;
+}
+
+aside#side-drawer header {
+  height: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5%;
+}
+
+aside#side-drawer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside#side-drawer ul li {
+  margin: 1rem 0;
+}
+
+#side-drawer li a {
+  color: rgb(253, 239, 213);
+  font-size: 2rem;
+}
